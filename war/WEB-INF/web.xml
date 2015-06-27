@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+
+	<servlet>
+		<servlet-name>agregarAdministrador</servlet-name>
+		<servlet-class>Controlador.agregarAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>agregarAdministrador</servlet-name>
+		<url-pattern>/ajax03</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Iniciar</servlet-name>
+		<servlet-class>Controlador.Iniciar</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Iniciar</servlet-name>
+		<url-pattern>/iniciar</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>vista</servlet-name>
+		<servlet-class>Controlador.vista</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>vista</servlet-name>
+		<url-pattern>/vista</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>Cerrar</servlet-name>
+		<servlet-class>Controlador.Cerrar</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cerrar</servlet-name>
+		<url-pattern>/cerrar</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>comentarios</servlet-name>
+		<servlet-class>Controlador.comentarios</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>comentarios</servlet-name>
+		<url-pattern>/comentarios</url-pattern>
+	</servlet-mapping>
+	
+				<servlet>
+		<servlet-name>contacto</servlet-name>
+		<servlet-class>Controlador.contacto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>contacto</servlet-name>
+		<url-pattern>/contacto</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaComentarios</servlet-name>
+		<servlet-class>Controlador.ListaComentarios</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaComentarios</servlet-name>
+		<url-pattern>/listaComentarios</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>borrarAdministrador</servlet-name>
+		<servlet-class>Controlador.borrarAdministrador</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>borrarAdministrador</servlet-name>
+		<url-pattern>/ajax04_1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListaPersonas</servlet-name>
+		<servlet-class>Controlador.ListaPersonas</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPersonas</servlet-name>
+		<url-pattern>/administrador</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ListaPlatos</servlet-name>
+		<servlet-class>Controlador.ListaPlatos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaPlatos</servlet-name>
+		<url-pattern>/platos</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>precios</servlet-name>
+		<servlet-class>Controlador.precios</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>precios</servlet-name>
+		<url-pattern>/precios</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>agregarPlato</servlet-name>
+		<servlet-class>Controlador.agregarPlato</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>agregarPlato</servlet-name>
+		<url-pattern>/plato</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>RemovePersona</servlet-name>
+		<servlet-class>Controlador.RemovePersona</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RemovePersona</servlet-name>
+		<url-pattern>/borrarpersonas</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+</web-app>
